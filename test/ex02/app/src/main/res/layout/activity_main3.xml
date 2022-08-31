@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:orientation="vertical"
+    android:padding="10sp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="0sp"
+            android:layout_weight="200"
+            android:layout_height="wrap_content"
+            android:hint="입력"
+            android:visibility="gone"/>
+        <Spinner
+            android:id="@+id/fruit"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="159"
+            />
+        <ImageView
+            android:id="@+id/insert"
+            android:src="@drawable/ic_insert"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="10sp"/>
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/ic_d"
+            android:layout_marginLeft="10sp"/>
+
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20sp"/>
+
+
+
+</LinearLayout>
